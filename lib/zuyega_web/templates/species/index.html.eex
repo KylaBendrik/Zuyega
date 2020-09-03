@@ -1,0 +1,5 @@
+<ul>
+  <%= for species <- @species do %>
+    <li><%= species.name %> (<%= species.genus %> <%= species.species %>)</li>
+  <% end %>
+</ul>
