@@ -18,6 +18,8 @@ defmodule ZuyegaWeb.Router do
 
     get "/", PageController, :index
     get "/species", SpeciesController, :index
+    get "/species/:id", SpeciesController, :show
+    get "/species/:id/edit", SpeciesController, :edit
   end
 
   # Other scopes may use custom stacks.
