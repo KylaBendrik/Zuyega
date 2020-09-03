@@ -1,2 +1,5 @@
 <h1><%= @species.name %></h1>
-<h2><%= @species.genus %> <%= @species.species %>
+<h2><%= @species.genus %> <%= @species.species %></h2>
+<p><%= @species.comments %></p>
+
+<a href="<%= Routes.species_path(ZuyegaWeb.Endpoint, :edit, @species.id) %>">Edit</a>

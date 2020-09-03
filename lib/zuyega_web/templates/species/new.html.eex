@@ -1,7 +1,4 @@
-<h1><%= @species.name %></h1>
-<h2><%= @species.genus %> <%= @species.species %>
-
-<%= form_for @changeset, Routes.species_path(@conn, :update, @species.id), fn f -> %>
+<%= form_for @changeset, Routes.species_path(@conn, :create), fn f -> %>
 <label>
   Name: <%= text_input f, :name %>
 </label>

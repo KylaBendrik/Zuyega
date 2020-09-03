@@ -17,9 +17,7 @@ defmodule ZuyegaWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
-    get "/species", SpeciesController, :index
-    get "/species/:id", SpeciesController, :show
-    get "/species/:id/edit", SpeciesController, :edit
+    resources "/species", SpeciesController
   end
 
   # Other scopes may use custom stacks.
