@@ -17,7 +17,7 @@
           </ul>
         </nav>
         <a href="https://phoenixframework.org/" class="phx-logo">
-          <img src="<%= Routes.static_path(@conn, "/images/phoenix.png") %>" alt="Phoenix Framework Logo"/>
+          <img src="<%= Routes.static_path(@conn, "/images/bonsai1.svg") %>" alt="Zuyega Logo"/>
         </a>
       </section>
     </header>
