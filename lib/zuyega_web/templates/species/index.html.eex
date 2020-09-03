@@ -1,0 +1,5 @@
+<ul>
+  <%= for species <- @species do %>
+    <li><a href="<%= species_link_path(species) %>" ><%= species_link_text(species) %></a></li>
+  <% end %>
+</ul>
